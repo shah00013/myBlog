@@ -1,0 +1,55 @@
+
+.blog .article-wrapper,
+.blog article.post {
+    box-sizing: border-box;
+    display: inline-block;
+    padding-left: 9px;
+    padding-right: 9px;
+    position: relative;
+    margin-right: 30px;
+    vertical-align: top;
+    width: calc((100% / 3) - 25px);
+}
+
+.blog .article-wrapper:nth-child(3n),
+.blog article.post:nth-child(3n) {
+    margin-right: 0;
+}
+
+.blog .page-title {
+    text-align: center;
+    margin:0;
+}
+
+.blog .page-header {
+    margin-bottom:15px;
+}
+
+.blog article .entry-meta {
+    margin-top: 10px;
+}
+
+.blog article .featured-image {
+  margin:20px 0;
+}
+
+@media screen and (max-width: 900px) and (min-width: 750px) {
+.blog .article-wrapper, .blog article.post {
+    width:30%;
+    }
+}
+
+@media screen and (max-width: 980px) and (min-width: 850px) {
+.blog .article-wrapper, .blog article.post {
+    padding-left: 8px;
+    padding-right: 8px;
+    }
+}
+
+@media (max-width: 360px) {
+.blog .article-wrapper, .blog article.post {
+    width: 94%;
+    padding-left: 8px;
+    padding-right: 8px;
+    }
+}
